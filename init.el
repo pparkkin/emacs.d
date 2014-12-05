@@ -9,11 +9,7 @@
 (setq scroll-step 1)
 (setq scroll-margin 1)
 
-(setq mac-option-modifier nil
-      mac-command-modifier 'meta
-      x-select-enable-clipboard t)
-
-(setq default-directory "/Users/pparkkin/")
+(setq default-directory "/home/pparkkin")
 (setq-default indent-tabs-mode nil)
 (setq-default column-number-mode t)
 
