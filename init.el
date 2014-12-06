@@ -9,7 +9,13 @@
 (setq scroll-step 1)
 (setq scroll-margin 1)
 
-(setq default-directory "/home/pparkkin")
+(when (eq system-type 'darwin)
+  (setq default-directory (concat "/Users/" (user-login-name)))
+  (setq mac-command-modifier 'meta)
+  (setq mac-option-modifier nil))
+(when (eq system-type 'gnu/linux)
+  (setq default-directory (concat "/home/" (user-login-name))))
+
 (setq-default indent-tabs-mode nil)
 (setq-default column-number-mode t)
 
